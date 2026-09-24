@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-24T12:00:00.000Z",
+  "title": "Design System: StableFlow Clearing Desk",
+  "extensions": {
+    "colorMeta": {
+      "ledger": { "role": "neutral", "displayName": "Ledger Field", "canonical": "#F3F4EE" },
+      "ink": { "role": "neutral", "displayName": "Clearing Ink", "canonical": "#132238" },
+      "cobalt": { "role": "primary", "displayName": "Action Cobalt", "canonical": "#1746D1" },
+      "signal": { "role": "secondary", "displayName": "Registration Orange", "canonical": "#F0643B" }
+    },
+    "motion": [
+      { "name": "stamp", "value": "420ms cubic-bezier(.16,1,.3,1)", "purpose": "A payment checkpoint registers with a short ink-stamp settle." }
+    ],
+    "breakpoints": [
+      { "name": "compact", "value": "820px" }
+    ]
+  },
+  "components": [],
+  "narrative": {
+    "northStar": "The Clearing Manifest",
+    "overview": "StableFlow presents every payment as a named consignment moving through explicit clearing checkpoints.",
+    "keyCharacteristics": ["Cool paper fields", "Explicit status stamps", "Chronological manifest rows"],
+    "rules": [
+      { "name": "Registration Mark", "body": "Signal orange appears once per major surface.", "section": "colors" }
+    ],
+    "dos": ["Keep state, amount, and network visible together."],
+    "donts": ["Do not imply local data is confirmed on-chain."]
+  }
+}

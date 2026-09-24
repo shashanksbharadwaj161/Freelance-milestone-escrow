@@ -1,0 +1,5 @@
+import { Logo } from "@/components/logo";
+
+export default function DocsPage() {
+  return <main className="docsShell"><Logo /><article><p className="registration">STABLEFLOW / DOCUMENTATION</p><h1>From invoice to settlement</h1><p>StableFlow gives every invoice a deterministic ERC-20 vault address. The address can receive funds before the vault contract is deployed.</p><h2>Payment lifecycle</h2><ol><li>The merchant saves an invoice draft.</li><li>The merchant reserves its configuration in the factory contract.</li><li>The customer transfers the allowed stablecoin to the predicted vault address.</li><li>An indexer observes the token transfer and waits for the configured confirmation threshold.</li><li>The vault is deployed and the merchant settles or refunds the balance.</li></ol><h2>State semantics</h2><p>“Detected” means a matching transaction was observed. “Paid” means the expected amount reached the configured confirmation threshold. “Settled” means the vault emitted a settlement event.</p></article></main>;
+}

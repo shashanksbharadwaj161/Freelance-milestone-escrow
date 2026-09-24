@@ -1,0 +1,16 @@
+node_modules
+.next
+out
+dist
+coverage
+artifacts
+cache
+typechain-types
+.env
+.env.local
+*.log
+.DS_Store
+work/
+outputs/
+packages/contracts/deployments/*.json
+!packages/contracts/deployments/.gitkeep

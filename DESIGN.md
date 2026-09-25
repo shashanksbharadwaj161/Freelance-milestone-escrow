@@ -1,107 +1,104 @@
 ---
-name: StableFlow Clearing Desk
-description: Stablecoin operations presented as a precise clearing manifest.
+name: StableFlow Spatial Escrow
+description: A calm, Apple-inspired operating surface that makes protected funds and milestone movement feel tangible.
 colors:
-  ledger: "#F3F4EE"
-  paper: "#FFFFFF"
-  ink: "#132238"
-  muted-ink: "#5C6675"
-  cobalt: "#1746D1"
-  signal: "#F0643B"
-  success: "#138A5B"
-  rule: "#CAD0D8"
+  canvas: "#F5F5F7"
+  surface: "#FFFFFF"
+  ink: "#1D1D1F"
+  secondary: "#6E6E73"
+  blue: "#0071E3"
+  blue-deep: "#0058B0"
+  green: "#16845B"
+  amber: "#A05A00"
+  red: "#C9342F"
+  separator: "rgba(0,0,0,.10)"
 typography:
   display:
-    fontFamily: "Arial Narrow, Aptos Narrow, sans-serif"
-    fontSize: "clamp(2.7rem, 6vw, 5.5rem)"
+    fontFamily: "-apple-system, BlinkMacSystemFont, SF Pro Display, Helvetica Neue, sans-serif"
+    fontSize: "clamp(3rem, 7vw, 6rem)"
     fontWeight: 700
-    lineHeight: 0.92
-    letterSpacing: "-0.035em"
+    lineHeight: 0.96
+    letterSpacing: "-0.04em"
   body:
-    fontFamily: "Aptos, Helvetica Neue, sans-serif"
+    fontFamily: "-apple-system, BlinkMacSystemFont, SF Pro Text, Helvetica Neue, sans-serif"
     fontSize: "1rem"
     fontWeight: 400
-    lineHeight: 1.55
-    letterSpacing: "normal"
-  label:
-    fontFamily: "Aptos Mono, SFMono-Regular, monospace"
-    fontSize: "0.75rem"
-    fontWeight: 650
-    lineHeight: 1.2
-    letterSpacing: "0.06em"
+    lineHeight: 1.5
+    letterSpacing: "-0.01em"
+  data:
+    fontFamily: "SFMono-Regular, ui-monospace, Menlo, monospace"
+    fontSize: ".75rem"
+    fontWeight: 600
+    lineHeight: 1.35
+    letterSpacing: "-0.01em"
 rounded:
-  control: "6px"
-  surface: "14px"
+  control: "12px"
+  surface: "24px"
+  hero: "32px"
   status: "999px"
 spacing:
-  xs: "4px"
-  sm: "8px"
-  md: "16px"
-  lg: "24px"
-  xl: "40px"
+  xs: "6px"
+  sm: "10px"
+  md: "18px"
+  lg: "28px"
+  xl: "48px"
 components:
   button-primary:
-    backgroundColor: "{colors.cobalt}"
-    textColor: "{colors.paper}"
-    rounded: "{rounded.control}"
-    padding: "12px 18px"
-  card:
-    backgroundColor: "{colors.paper}"
+    backgroundColor: "{colors.blue}"
+    textColor: "{colors.surface}"
+    rounded: "{rounded.status}"
+    padding: "11px 18px"
+  surface:
+    backgroundColor: "{colors.surface}"
     textColor: "{colors.ink}"
     rounded: "{rounded.surface}"
-    padding: "24px"
+    padding: "28px"
 ---
 
-# Design System: StableFlow Clearing Desk
+# Design System: StableFlow Spatial Escrow
 
 ## Overview
 
-**Creative North Star: "The Clearing Manifest"**
+**Creative North Star: “Protected value, visibly moving.”**
 
-StableFlow borrows the legibility of a customs clearing desk: every payment is a named consignment moving through explicit checkpoints, with registration marks, routing rules, and decisive state stamps. It refuses the category-standard dark neon wallet dashboard. The interface is bright because merchants use it throughout a working day, and dense where comparison matters without becoming cramped.
+StableFlow translates an escrow contract into a calm spatial interface. It borrows Apple’s hierarchy, restraint, system typography, precision, and product-stage pacing without copying Apple product chrome. The defining visual is a milestone rail: value moves through explicit states as a continuous protected path rather than a spreadsheet of blockchain jargon.
 
-**Key Characteristics:**
-- Cool paper fields and strong ink rules
-- Statuses expressed through words, symbols, and color
-- Manifest rows that reveal chronology and custody
-- One signal-orange registration mark per major surface
+## Color and material
 
-## Colors
-
-The palette is cool and administrative, with cobalt for action and signal orange reserved for registration marks and exceptions.
-
-**The Registration Mark Rule.** Signal orange appears once per major surface and never substitutes for payment status.
+The primary operating scene is a bright workstation under neutral daylight. Porcelain canvas separates the app from crisp white working surfaces. Graphite holds content, system blue identifies the next safe action, and semantic green, amber, and red are always paired with labels or icons. Translucency is limited to the persistent navigation where content passes behind it; working surfaces stay opaque for legibility.
 
 ## Typography
 
-Condensed display type makes invoice identifiers and totals feel stamped; a neutral workhorse sans carries operational copy; monospaced labels are reserved for addresses, amounts, and timestamps.
-
-**The Measurement Rule.** Monospace is used only where alignment, copying, or exact comparison matters.
+Use the native Apple system stack for display and interface text. Large titles are tightly tracked and capped at 6rem. Monospace appears only for wallet addresses, identifiers, timestamps, hashes, and aligned amounts.
 
 ## Layout
 
-Desktop uses a 12-column shell with a fixed 232px navigation rail and manifest content spanning the remainder. Tables are allowed to feel like tables. At 820px the rail becomes a compact header and comparative rows turn into labeled records. Spacing follows an 8px base rhythm.
-
-## Elevation & Depth
-
-The system is flat by default. Borders, paper contrast, and offset registration shadows establish hierarchy; menus and active transactional panels may use a soft 0 14px 40px rgba(19,34,56,.12) shadow.
-
-## Shapes
-
-Controls use 6px corners, large working surfaces use 14px corners, and statuses may use pill geometry. Registration stamps and QR frames remain square.
+Desktop uses a centered 1440px stage beneath a compact translucent top navigation. The first dashboard viewport pairs an editorial protected-balance statement with a tangible milestone trace. Operational sections use full-width surfaces, separators, and generous internal whitespace. Mobile becomes a single column with a native-feeling bottom navigation and 44px minimum targets.
 
 ## Components
 
-Buttons are compact and decisive. Inputs display persistent labels and exact recovery text. Manifest rows carry a state stamp, amount, counterparty, network, and last event without nesting cards. Focus rings are 3px cobalt with a 2px paper offset.
+- Buttons use clear hierarchy, pill geometry, and semantic labels.
+- Surfaces use 24px corners, a hairline separator, and one directional soft shadow only when lifted.
+- Status chips always combine text, icon, and semantic tint.
+- Tables become labeled project records on narrow screens.
+- Alerts explain both state and recovery.
+- Forms retain persistent labels, native input semantics, and visible validation status.
+- Range and progress controls expose their value in text and keep keyboard behavior native.
 
-## Do's and Don'ts
+## Motion
 
-### Do:
-- **Do** keep invoice state, amount, and network visible together.
-- **Do** pair every state color with a readable label and symbol.
-- **Do** let dense ledgers use rules and alignment instead of card grids.
+One orchestrated entrance reveals the protected balance and traces milestones from left to right. Hover motion is limited to 1–2px lift with shadow change. Reduced-motion users receive the final state immediately.
 
-### Don't:
-- **Don't** imply that locally recorded data is confirmed on-chain.
-- **Don't** use decorative gradients, glass panels, or neon wallet aesthetics.
-- **Don't** shorten wallet addresses when the user is expected to copy or verify them.
+## Do
+
+- Keep the next authorized action obvious.
+- Distinguish demonstration, observed, and on-chain-final states in plain language.
+- Let whitespace and type scale create drama while maintaining operational scanability.
+- Use blur only for navigation continuity.
+
+## Don’t
+
+- Don’t imitate macOS window chrome or Apple logos.
+- Don’t use neon, crypto gradients, glowing borders, or dark exchange-dashboard conventions.
+- Don’t hide state behind color, abbreviated addresses, or icon-only actions.
+- Don’t stack cards inside cards.
